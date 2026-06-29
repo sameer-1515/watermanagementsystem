@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Water Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        Water Management
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#problems">Problems</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#stats">Statistics</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <button id="darkBtn">
+        Dark Mode
+    </button>
+
+</header>
+
+<section id="home" class="hero">
+
+    <div class="hero-text">
+
+        <h1>Save Water Save Future</h1>
+
+        <p>
+            Smart water management system for awareness and conservation.
+        </p>
+
+        <button onclick="scrollToSection()">
+            Explore
+        </button>
+
+    </div>
+
+</section>
+
+<section id="problems">
+
+    <h2>Water Wastage Problems</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="images/leakage.png">
+
+            <h3>Leakage</h3>
+
+            <p>
+                Water leakage causes massive water loss every year.
+            </p>
+
+<a href="leakage.html">
+    <button>Details</button>
+</a>
+        </div>
+
+        <div class="card">
+            <img src="images/overflow.png">
+
+            <h3>Tank Overflow</h3>
+
+            <p>
+                Overflowing tanks waste clean water daily.
+            </p>
+<a href="overflow.html">
+    <button>Details</button>
+</a>
+        </div>
+
+        <div class="card">
+            <img src="images/carwash.png">
+
+            <h3>Vehicle Washing</h3>
+
+            <p>
+                Excessive pipe usage wastes water.
+            </p>
+
+        <a href="carwash.html">
+    <button>Details</button>
+</a>    
+        </div>
+
+    </div>
+
+</section>
+<section id="solutions">
+
+    <h2>Water Saving Solutions</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <img src="images/rainwater.png">
+
+            <h3>Rainwater Harvesting</h3>
+
+            <p>
+                Collect rainwater for future usage.
+            </p>
+
+            <a href="rainwater.html">
+                <button>Learn More</button>
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/drip.png">
+
+            <h3>Drip Irrigation</h3>
+
+            <p>
+                Smart irrigation system for farming.
+            </p>
+
+            <a href="drip.html">
+                <button>Learn More</button>
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/reuse.png">
+
+            <h3>Reuse Water</h3>
+
+            <p>
+                Reuse water for gardening and cleaning.
+            </p>
+
+            <a href="reuse.html">
+                <button>Learn More</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="stats">
+
+    <h2>Water Statistics</h2>
+
+    <div class="stats-container">
+
+        <div class="stat-box">
+            <h3>70%</h3>
+            <p>Earth Covered With Water</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>3%</h3>
+            <p>Fresh Water Available</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>1 Billion</h3>
+            <p>People Lack Clean Water</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="gallery">
+
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+
+        <img src="images/gallery1.png" onclick="openImage(this.src)">
+        <img src="images/gallery2.png" onclick="openImage(this.src)">
+        <img src="images/gallery3.png" onclick="openImage(this.src)">
+        <img src="images/gallery4.png" onclick="openImage(this.src)">
+        <img src="images/gallery5.png" onclick="openImage(this.src)">
+        <img src="images/gallery6.png" onclick="openImage(this.src)">
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="number" placeholder="Your number">
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+<div id="imagePopup" onclick="closeImage()">
+
+    <span onclick="closeImage()">
+        ×
+    </span>
+
+    <img id="popupImg" onclick="event.stopPropagation()">
+
+</div>
+
+<footer>
+
+    <p>
+        © 2026 Water Management System
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<section id="solutions">
+
+    <h2>Water Saving Solutions</h2>
+
+    <div class="cards">
+
+        <!-- Rainwater Harvesting -->
+        <div class="card">
+
+            <img src="images/rainwater.png">
+
+            <h3>Rainwater Harvesting</h3>
+
+            <p>
+                Collect rainwater for future usage.
+            </p>
+
+            <a href="https://youtu.be/EYj2FfL9QoA" target="_blank">
+                <button>Learn More</button>
+            </a>
+
+        </div>
+
+        <!-- Drip Irrigation -->
+        <div class="card">
+
+            <img src="images/drip.png">
+
+            <h3>Drip Irrigation</h3>
+
+            <p>
+                Smart irrigation system for farming.
+            </p>
+
+            <a href="https://youtu.be/p-n2g36b-IE" target="_blank">
+                <button>Learn More</button>
+            </a>
+
+        </div>
+
+        <!-- Reuse Water -->
+        <div class="card">
+
+            <img src="images/reuse.png">
+
+            <h3>Reuse Water</h3>
+
+            <p>
+                Reuse water for gardening and cleaning.
+            </p>
+
+            <a href="https://youtu.be/87s1Qg0A6V8" target="_blank">
+                <button>Learn More</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
